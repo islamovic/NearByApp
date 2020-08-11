@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		A6BF1F4424E1B65C0091FCFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BF1F4324E1B65C0091FCFD /* AppDelegate.swift */; };
 		A6BF1F4624E1B65C0091FCFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BF1F4524E1B65C0091FCFD /* SceneDelegate.swift */; };
-		A6BF1F4824E1B65C0091FCFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BF1F4724E1B65C0091FCFD /* ViewController.swift */; };
 		A6BF1F4B24E1B65C0091FCFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6BF1F4924E1B65C0091FCFD /* Main.storyboard */; };
 		A6BF1F4D24E1B65E0091FCFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6BF1F4C24E1B65E0091FCFD /* Assets.xcassets */; };
 		A6BF1F5024E1B65E0091FCFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6BF1F4E24E1B65E0091FCFD /* LaunchScreen.storyboard */; };
@@ -28,7 +27,6 @@
 		A6BF1F4024E1B65C0091FCFD /* NearByApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NearByApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6BF1F4324E1B65C0091FCFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6BF1F4524E1B65C0091FCFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A6BF1F4724E1B65C0091FCFD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A6BF1F4A24E1B65C0091FCFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A6BF1F4C24E1B65E0091FCFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6BF1F4F24E1B65E0091FCFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -74,15 +72,9 @@
 		A6BF1F4224E1B65C0091FCFD /* NearByApp */ = {
 			isa = PBXGroup;
 			children = (
+				A6BF1F8424E2C42B0091FCFD /* Resources */,
 				A6BF1F7F24E1BBDF0091FCFD /* Managers */,
 				A6BF1F5A24E1B8BD0091FCFD /* Module */,
-				A6BF1F4324E1B65C0091FCFD /* AppDelegate.swift */,
-				A6BF1F4524E1B65C0091FCFD /* SceneDelegate.swift */,
-				A6BF1F4724E1B65C0091FCFD /* ViewController.swift */,
-				A6BF1F4924E1B65C0091FCFD /* Main.storyboard */,
-				A6BF1F4C24E1B65E0091FCFD /* Assets.xcassets */,
-				A6BF1F4E24E1B65E0091FCFD /* LaunchScreen.storyboard */,
-				A6BF1F5124E1B65E0091FCFD /* Info.plist */,
 			);
 			path = NearByApp;
 			sourceTree = "<group>";
@@ -132,6 +124,19 @@
 				A6BF1F8224E1BC210091FCFD /* AppWindowManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		A6BF1F8424E2C42B0091FCFD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A6BF1F5124E1B65E0091FCFD /* Info.plist */,
+				A6BF1F4324E1B65C0091FCFD /* AppDelegate.swift */,
+				A6BF1F4524E1B65C0091FCFD /* SceneDelegate.swift */,
+				A6BF1F4924E1B65C0091FCFD /* Main.storyboard */,
+				A6BF1F4C24E1B65E0091FCFD /* Assets.xcassets */,
+				A6BF1F4E24E1B65E0091FCFD /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,7 +217,6 @@
 				A6BF1F7B24E1B8F00091FCFD /* NearByPlacesViewController.swift in Sources */,
 				A6BF1F7624E1B8F00091FCFD /* NearByPlacesSceneRouter.swift in Sources */,
 				A6BF1F7824E1B8F00091FCFD /* NearByPlacesSceneModels.swift in Sources */,
-				A6BF1F4824E1B65C0091FCFD /* ViewController.swift in Sources */,
 				A6BF1F7724E1B8F00091FCFD /* NearByPlacesScenePresenter.swift in Sources */,
 				A6BF1F7A24E1B8F00091FCFD /* NearByPlacesSceneWorkers.swift in Sources */,
 				A6BF1F4424E1B65C0091FCFD /* AppDelegate.swift in Sources */,
@@ -362,7 +366,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 68T2QKLHFU;
-				INFOPLIST_FILE = NearByApp/Info.plist;
+				INFOPLIST_FILE = NearByApp/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -380,7 +384,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 68T2QKLHFU;
-				INFOPLIST_FILE = NearByApp/Info.plist;
+				INFOPLIST_FILE = NearByApp/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
