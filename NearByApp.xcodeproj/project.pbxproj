@@ -3,10 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A671EEF324E8B8AE00825B75 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A671EEE624E8B8AE00825B75 /* NetworkClient.swift */; };
+		A671EEF424E8B8AE00825B75 /* SpacesNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = A671EEE724E8B8AE00825B75 /* SpacesNetworking.swift */; };
+		A671EEF524E8B8AE00825B75 /* Wrapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = A671EEE824E8B8AE00825B75 /* Wrapping.swift */; };
+		A671EEF624E8B8AE00825B75 /* URL_Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A671EEE924E8B8AE00825B75 /* URL_Generator.swift */; };
+		A671EEF724E8B8AE00825B75 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A671EEEA24E8B8AE00825B75 /* NetworkService.swift */; };
+		A671EEF824E8B8AE00825B75 /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = A671EEEB24E8B8AE00825B75 /* HttpMethod.swift */; };
+		A671EEF924E8B8AE00825B75 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = A671EEEC24E8B8AE00825B75 /* Request.swift */; };
+		A671EEFA24E8B8AE00825B75 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A671EEED24E8B8AE00825B75 /* Router.swift */; };
+		A671EEFB24E8B8AE00825B75 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A671EEEE24E8B8AE00825B75 /* NetworkError.swift */; };
+		A671EEFC24E8B8AE00825B75 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A671EEF124E8B8AE00825B75 /* SessionManager.swift */; };
+		A671EEFD24E8B8AE00825B75 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = A671EEF224E8B8AE00825B75 /* Types.swift */; };
+		A671EF0024E8BA6C00825B75 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = A671EEFF24E8BA6C00825B75 /* Results.swift */; };
 		A6BF1F4424E1B65C0091FCFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BF1F4324E1B65C0091FCFD /* AppDelegate.swift */; };
 		A6BF1F4624E1B65C0091FCFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BF1F4524E1B65C0091FCFD /* SceneDelegate.swift */; };
 		A6BF1F4B24E1B65C0091FCFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6BF1F4924E1B65C0091FCFD /* Main.storyboard */; };
@@ -21,9 +33,23 @@
 		A6BF1F7C24E1B8F00091FCFD /* NearByPlacesSceneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BF1F7524E1B8F00091FCFD /* NearByPlacesSceneInteractor.swift */; };
 		A6BF1F7E24E1B90C0091FCFD /* NearByPlacesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6BF1F7D24E1B90C0091FCFD /* NearByPlacesViewController.xib */; };
 		A6BF1F8324E1BC210091FCFD /* AppWindowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BF1F8224E1BC210091FCFD /* AppWindowManager.swift */; };
+		FCD4F9AAD6BE2AA54FFFC7ED /* Pods_NearByApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B9799149762F1D9E8846923 /* Pods_NearByApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B9799149762F1D9E8846923 /* Pods_NearByApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NearByApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A671EEE624E8B8AE00825B75 /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		A671EEE724E8B8AE00825B75 /* SpacesNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpacesNetworking.swift; sourceTree = "<group>"; };
+		A671EEE824E8B8AE00825B75 /* Wrapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wrapping.swift; sourceTree = "<group>"; };
+		A671EEE924E8B8AE00825B75 /* URL_Generator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URL_Generator.swift; sourceTree = "<group>"; };
+		A671EEEA24E8B8AE00825B75 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		A671EEEB24E8B8AE00825B75 /* HttpMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
+		A671EEEC24E8B8AE00825B75 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		A671EEED24E8B8AE00825B75 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		A671EEEE24E8B8AE00825B75 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		A671EEF124E8B8AE00825B75 /* SessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		A671EEF224E8B8AE00825B75 /* Types.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
+		A671EEFF24E8BA6C00825B75 /* Results.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
 		A6BF1F4024E1B65C0091FCFD /* NearByApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NearByApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6BF1F4324E1B65C0091FCFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6BF1F4524E1B65C0091FCFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +66,8 @@
 		A6BF1F7524E1B8F00091FCFD /* NearByPlacesSceneInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearByPlacesSceneInteractor.swift; sourceTree = "<group>"; };
 		A6BF1F7D24E1B90C0091FCFD /* NearByPlacesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NearByPlacesViewController.xib; sourceTree = "<group>"; };
 		A6BF1F8224E1BC210091FCFD /* AppWindowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppWindowManager.swift; sourceTree = "<group>"; };
+		A8C3EE1F4E4B40192143FD97 /* Pods-NearByApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NearByApp.release.xcconfig"; path = "Target Support Files/Pods-NearByApp/Pods-NearByApp.release.xcconfig"; sourceTree = "<group>"; };
+		FD85754EB57451ECEEA80D1C /* Pods-NearByApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NearByApp.debug.xcconfig"; path = "Target Support Files/Pods-NearByApp/Pods-NearByApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,17 +75,73 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCD4F9AAD6BE2AA54FFFC7ED /* Pods_NearByApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C63ED415672B366951FF9D3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD85754EB57451ECEEA80D1C /* Pods-NearByApp.debug.xcconfig */,
+				A8C3EE1F4E4B40192143FD97 /* Pods-NearByApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A671EEE424E8B89000825B75 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				A671EEE524E8B8AE00825B75 /* Base */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		A671EEE524E8B8AE00825B75 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				A671EEFE24E8BA6C00825B75 /* Utils */,
+				A671EEF024E8B8AE00825B75 /* Client */,
+				A671EEE624E8B8AE00825B75 /* NetworkClient.swift */,
+				A671EEE724E8B8AE00825B75 /* SpacesNetworking.swift */,
+				A671EEE824E8B8AE00825B75 /* Wrapping.swift */,
+				A671EEE924E8B8AE00825B75 /* URL_Generator.swift */,
+				A671EEEA24E8B8AE00825B75 /* NetworkService.swift */,
+				A671EEEB24E8B8AE00825B75 /* HttpMethod.swift */,
+				A671EEEC24E8B8AE00825B75 /* Request.swift */,
+				A671EEED24E8B8AE00825B75 /* Router.swift */,
+				A671EEEE24E8B8AE00825B75 /* NetworkError.swift */,
+				A671EEF224E8B8AE00825B75 /* Types.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		A671EEF024E8B8AE00825B75 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				A671EEF124E8B8AE00825B75 /* SessionManager.swift */,
+			);
+			name = Client;
+			path = Client/Client;
+			sourceTree = "<group>";
+		};
+		A671EEFE24E8BA6C00825B75 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A671EEFF24E8BA6C00825B75 /* Results.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		A6BF1F3724E1B65C0091FCFD = {
 			isa = PBXGroup;
 			children = (
 				A6BF1F4224E1B65C0091FCFD /* NearByApp */,
 				A6BF1F4124E1B65C0091FCFD /* Products */,
+				2C63ED415672B366951FF9D3 /* Pods */,
+				AC4F3C6DF7E58D20A62BB649 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +156,7 @@
 		A6BF1F4224E1B65C0091FCFD /* NearByApp */ = {
 			isa = PBXGroup;
 			children = (
+				A671EEE424E8B89000825B75 /* Networking */,
 				A6BF1F8424E2C42B0091FCFD /* Resources */,
 				A6BF1F7F24E1BBDF0091FCFD /* Managers */,
 				A6BF1F5A24E1B8BD0091FCFD /* Module */,
@@ -139,6 +224,14 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		AC4F3C6DF7E58D20A62BB649 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B9799149762F1D9E8846923 /* Pods_NearByApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,9 +239,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6BF1F5424E1B65E0091FCFD /* Build configuration list for PBXNativeTarget "NearByApp" */;
 			buildPhases = (
+				D48B3FFDB6187ED98A7F136A /* [CP] Check Pods Manifest.lock */,
 				A6BF1F3C24E1B65C0091FCFD /* Sources */,
 				A6BF1F3D24E1B65C0091FCFD /* Frameworks */,
 				A6BF1F3E24E1B65C0091FCFD /* Resources */,
+				1558A4B2F0E991294277190D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -206,6 +301,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1558A4B2F0E991294277190D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NearByApp/Pods-NearByApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NearByApp/Pods-NearByApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NearByApp/Pods-NearByApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D48B3FFDB6187ED98A7F136A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NearByApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A6BF1F3C24E1B65C0091FCFD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -214,13 +351,25 @@
 				A6BF1F7C24E1B8F00091FCFD /* NearByPlacesSceneInteractor.swift in Sources */,
 				A6BF1F8324E1BC210091FCFD /* AppWindowManager.swift in Sources */,
 				A6BF1F7924E1B8F00091FCFD /* NearByPlacesSceneConfigurator.swift in Sources */,
+				A671EEFD24E8B8AE00825B75 /* Types.swift in Sources */,
+				A671EEF324E8B8AE00825B75 /* NetworkClient.swift in Sources */,
+				A671EEFA24E8B8AE00825B75 /* Router.swift in Sources */,
+				A671EEF424E8B8AE00825B75 /* SpacesNetworking.swift in Sources */,
 				A6BF1F7B24E1B8F00091FCFD /* NearByPlacesViewController.swift in Sources */,
 				A6BF1F7624E1B8F00091FCFD /* NearByPlacesSceneRouter.swift in Sources */,
+				A671EEF924E8B8AE00825B75 /* Request.swift in Sources */,
+				A671EEF624E8B8AE00825B75 /* URL_Generator.swift in Sources */,
+				A671EEF524E8B8AE00825B75 /* Wrapping.swift in Sources */,
 				A6BF1F7824E1B8F00091FCFD /* NearByPlacesSceneModels.swift in Sources */,
+				A671EEF724E8B8AE00825B75 /* NetworkService.swift in Sources */,
 				A6BF1F7724E1B8F00091FCFD /* NearByPlacesScenePresenter.swift in Sources */,
+				A671EEF824E8B8AE00825B75 /* HttpMethod.swift in Sources */,
 				A6BF1F7A24E1B8F00091FCFD /* NearByPlacesSceneWorkers.swift in Sources */,
 				A6BF1F4424E1B65C0091FCFD /* AppDelegate.swift in Sources */,
+				A671EF0024E8BA6C00825B75 /* Results.swift in Sources */,
 				A6BF1F4624E1B65C0091FCFD /* SceneDelegate.swift in Sources */,
+				A671EEFC24E8B8AE00825B75 /* SessionManager.swift in Sources */,
+				A671EEFB24E8B8AE00825B75 /* NetworkError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +511,7 @@
 		};
 		A6BF1F5524E1B65E0091FCFD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD85754EB57451ECEEA80D1C /* Pods-NearByApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -380,6 +530,7 @@
 		};
 		A6BF1F5624E1B65E0091FCFD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8C3EE1F4E4B40192143FD97 /* Pods-NearByApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

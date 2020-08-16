@@ -21,6 +21,10 @@ class NearByPlacesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+
+    @IBAction func realtimeButtonTapped(_ sender: UIBarButtonItem) {
+        
+    }
 }
 
 extension NearByPlacesViewController: NearByPlacesSceneDisplayView {
