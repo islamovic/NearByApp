@@ -19,6 +19,9 @@
 		A671EEFC24E8B8AE00825B75 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A671EEF124E8B8AE00825B75 /* SessionManager.swift */; };
 		A671EEFD24E8B8AE00825B75 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = A671EEF224E8B8AE00825B75 /* Types.swift */; };
 		A671EF0024E8BA6C00825B75 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = A671EEFF24E8BA6C00825B75 /* Results.swift */; };
+		A671EF0624E8BB9C00825B75 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A671EF0224E8BB9C00825B75 /* Environment.swift */; };
+		A671EF0724E8BB9C00825B75 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A671EF0424E8BB9C00825B75 /* Constants.swift */; };
+		A671EF0824E8BB9C00825B75 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = A671EF0524E8BB9C00825B75 /* Server.swift */; };
 		A6BF1F4424E1B65C0091FCFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BF1F4324E1B65C0091FCFD /* AppDelegate.swift */; };
 		A6BF1F4624E1B65C0091FCFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BF1F4524E1B65C0091FCFD /* SceneDelegate.swift */; };
 		A6BF1F4B24E1B65C0091FCFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6BF1F4924E1B65C0091FCFD /* Main.storyboard */; };
@@ -50,6 +53,9 @@
 		A671EEF124E8B8AE00825B75 /* SessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		A671EEF224E8B8AE00825B75 /* Types.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
 		A671EEFF24E8BA6C00825B75 /* Results.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
+		A671EF0224E8BB9C00825B75 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		A671EF0424E8BB9C00825B75 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A671EF0524E8BB9C00825B75 /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
 		A6BF1F4024E1B65C0091FCFD /* NearByApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NearByApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6BF1F4324E1B65C0091FCFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6BF1F4524E1B65C0091FCFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -135,6 +141,24 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		A671EF0124E8BB8600825B75 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A671EF0324E8BB9C00825B75 /* Constants */,
+				A671EF0224E8BB9C00825B75 /* Environment.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A671EF0324E8BB9C00825B75 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				A671EF0424E8BB9C00825B75 /* Constants.swift */,
+				A671EF0524E8BB9C00825B75 /* Server.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		A6BF1F3724E1B65C0091FCFD = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +180,7 @@
 		A6BF1F4224E1B65C0091FCFD /* NearByApp */ = {
 			isa = PBXGroup;
 			children = (
+				A671EF0124E8BB8600825B75 /* Core */,
 				A671EEE424E8B89000825B75 /* Networking */,
 				A6BF1F8424E2C42B0091FCFD /* Resources */,
 				A6BF1F7F24E1BBDF0091FCFD /* Managers */,
@@ -348,6 +373,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A671EF0824E8BB9C00825B75 /* Server.swift in Sources */,
 				A6BF1F7C24E1B8F00091FCFD /* NearByPlacesSceneInteractor.swift in Sources */,
 				A6BF1F8324E1BC210091FCFD /* AppWindowManager.swift in Sources */,
 				A6BF1F7924E1B8F00091FCFD /* NearByPlacesSceneConfigurator.swift in Sources */,
@@ -361,6 +387,7 @@
 				A671EEF624E8B8AE00825B75 /* URL_Generator.swift in Sources */,
 				A671EEF524E8B8AE00825B75 /* Wrapping.swift in Sources */,
 				A6BF1F7824E1B8F00091FCFD /* NearByPlacesSceneModels.swift in Sources */,
+				A671EF0624E8BB9C00825B75 /* Environment.swift in Sources */,
 				A671EEF724E8B8AE00825B75 /* NetworkService.swift in Sources */,
 				A6BF1F7724E1B8F00091FCFD /* NearByPlacesScenePresenter.swift in Sources */,
 				A671EEF824E8B8AE00825B75 /* HttpMethod.swift in Sources */,
@@ -370,6 +397,7 @@
 				A6BF1F4624E1B65C0091FCFD /* SceneDelegate.swift in Sources */,
 				A671EEFC24E8B8AE00825B75 /* SessionManager.swift in Sources */,
 				A671EEFB24E8B8AE00825B75 /* NetworkError.swift in Sources */,
+				A671EF0724E8BB9C00825B75 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
