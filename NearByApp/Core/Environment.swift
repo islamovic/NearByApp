@@ -6,6 +6,8 @@
 //  Copyright © 2020 Spaces. All rights reserved.
 //
 
+import Foundation
+
 public enum Environment: String {
     case
     debug,

@@ -10,6 +10,7 @@ import UIKit
 
 protocol NearByPlacesSceneDisplayView: class {
 
+    func displayVenues(viewModel: NearByPlacesScene.Search.ViewModel)
 }
 
 class NearByPlacesViewController: UIViewController {
@@ -20,6 +21,8 @@ class NearByPlacesViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        interactor.fetchNearByVenues()
     }
 
     @IBAction func realtimeButtonTapped(_ sender: UIBarButtonItem) {
@@ -29,4 +32,7 @@ class NearByPlacesViewController: UIViewController {
 
 extension NearByPlacesViewController: NearByPlacesSceneDisplayView {
 
+    func displayVenues(viewModel: NearByPlacesScene.Search.ViewModel) {
+        
+    }
 }

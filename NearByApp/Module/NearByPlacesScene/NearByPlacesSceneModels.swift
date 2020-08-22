@@ -7,9 +7,17 @@
 //
 
 enum NearByPlacesScene {
-
+    enum Search { }
 }
 
-extension NearByPlacesScene {
-    
+extension NearByPlacesScene.Search {
+
+    struct VenueViewModel {
+        let name: String
+        let search: String
+    }
+
+    struct ViewModel {
+        let venues: [VenueViewModel]
+    }
 }

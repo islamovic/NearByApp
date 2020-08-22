@@ -13,9 +13,9 @@ extension Constants {
 
             switch environment {
             case .release:
-                return "https://api.foursquare.com/v2/"
+                return "https://api.foursquare.com/v2"
             case .debug:
-                return "https://api.foursquare.com/v2/"
+                return "https://api.foursquare.com/v2"
             }
         }
 

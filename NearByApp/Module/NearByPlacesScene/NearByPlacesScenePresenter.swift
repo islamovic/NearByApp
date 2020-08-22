@@ -8,6 +8,7 @@
 
 protocol NearByPlacesScenePresentationLogic: class {
 
+    func present(venues: [Venue])
 }
 
 class NearByPlacesScenePresenter: NearByPlacesScenePresentationLogic {
@@ -23,4 +24,16 @@ class NearByPlacesScenePresenter: NearByPlacesScenePresentationLogic {
 
 extension NearByPlacesScenePresenter {
 
+    func present(venues: [Venue]) {
+
+        var venuesViewModel = [NearByPlacesScene.Search.VenueViewModel]()
+        venues.forEach {
+            let venueViewModel = NearByPlacesScene.Search.VenueViewModel(name: $0.name,
+                                                                         search: $0.location.formattedAddress.first ?? "")
+            venuesViewModel.append(venueViewModel)
+        }
+
+        let viewModel = NearByPlacesScene.Search.ViewModel(venues: venuesViewModel)
+        displayView?.displayVenues(viewModel: viewModel)
+    }
 }

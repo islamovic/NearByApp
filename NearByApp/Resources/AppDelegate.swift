@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         AppWindowManager.setupWindow(window)
+        AppLibManager.setupLibraries(application: application, launchOptions: launchOptions)
         return true
     }
 
