@@ -14,10 +14,10 @@ extension NearByPlacesScene.Search {
 
     struct VenueViewModel {
         let name: String
-        let search: String
+        let address: String
     }
 
     struct ViewModel {
-        let venues: [VenueViewModel]
+        var venues: [VenueViewModel]
     }
 }

@@ -16,6 +16,7 @@ class NearByPlacesSceneConfigurator {
         viewController.interactor = interactor
         viewController.dataStore = interactor
         viewController.router = router
+        viewController.viewStore = presenter
         return viewController
     }
 }

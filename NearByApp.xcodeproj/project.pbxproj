@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A62A4D1C24F1DB53001F419D /* UITableview+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62A4D1B24F1DB53001F419D /* UITableview+Utils.swift */; };
 		A671EEF324E8B8AE00825B75 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A671EEE624E8B8AE00825B75 /* NetworkClient.swift */; };
 		A671EEF424E8B8AE00825B75 /* NearByNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = A671EEE724E8B8AE00825B75 /* NearByNetworking.swift */; };
 		A671EEF524E8B8AE00825B75 /* Wrapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = A671EEE824E8B8AE00825B75 /* Wrapping.swift */; };
@@ -45,11 +46,14 @@
 		A6D8DE6624F084B3009198DB /* UserLess.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D8DE6524F084B3009198DB /* UserLess.swift */; };
 		A6D8DE6824F08541009198DB /* VenueNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D8DE6724F08541009198DB /* VenueNetworkService.swift */; };
 		A6D8DE6A24F0899A009198DB /* AppLibManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D8DE6924F0899A009198DB /* AppLibManager.swift */; };
+		A6D8DE6E24F1D8E1009198DB /* VenueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D8DE6C24F1D8E1009198DB /* VenueCell.swift */; };
+		A6D8DE6F24F1D8E1009198DB /* VenueCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6D8DE6D24F1D8E1009198DB /* VenueCell.xib */; };
 		FCD4F9AAD6BE2AA54FFFC7ED /* Pods_NearByApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B9799149762F1D9E8846923 /* Pods_NearByApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2B9799149762F1D9E8846923 /* Pods_NearByApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NearByApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A62A4D1B24F1DB53001F419D /* UITableview+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableview+Utils.swift"; sourceTree = "<group>"; };
 		A671EEE624E8B8AE00825B75 /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		A671EEE724E8B8AE00825B75 /* NearByNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearByNetworking.swift; sourceTree = "<group>"; };
 		A671EEE824E8B8AE00825B75 /* Wrapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wrapping.swift; sourceTree = "<group>"; };
@@ -90,6 +94,8 @@
 		A6D8DE6524F084B3009198DB /* UserLess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLess.swift; sourceTree = "<group>"; };
 		A6D8DE6724F08541009198DB /* VenueNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueNetworkService.swift; sourceTree = "<group>"; };
 		A6D8DE6924F0899A009198DB /* AppLibManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLibManager.swift; sourceTree = "<group>"; };
+		A6D8DE6C24F1D8E1009198DB /* VenueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueCell.swift; sourceTree = "<group>"; };
+		A6D8DE6D24F1D8E1009198DB /* VenueCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VenueCell.xib; sourceTree = "<group>"; };
 		A8C3EE1F4E4B40192143FD97 /* Pods-NearByApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NearByApp.release.xcconfig"; path = "Target Support Files/Pods-NearByApp/Pods-NearByApp.release.xcconfig"; sourceTree = "<group>"; };
 		FD85754EB57451ECEEA80D1C /* Pods-NearByApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NearByApp.debug.xcconfig"; path = "Target Support Files/Pods-NearByApp/Pods-NearByApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,6 +119,22 @@
 				A8C3EE1F4E4B40192143FD97 /* Pods-NearByApp.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		A62A4D1924F1DB33001F419D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A62A4D1A24F1DB43001F419D /* UITableView */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A62A4D1A24F1DB43001F419D /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				A62A4D1B24F1DB53001F419D /* UITableview+Utils.swift */,
+			);
+			path = UITableView;
 			sourceTree = "<group>";
 		};
 		A671EEE424E8B89000825B75 /* Networking */ = {
@@ -163,6 +185,7 @@
 		A671EF0124E8BB8600825B75 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				A62A4D1924F1DB33001F419D /* Extensions */,
 				A671EF0324E8BB9C00825B75 /* Constants */,
 				A671EF0224E8BB9C00825B75 /* Environment.swift */,
 			);
@@ -242,12 +265,12 @@
 		A6BF1F4224E1B65C0091FCFD /* NearByApp */ = {
 			isa = PBXGroup;
 			children = (
+				A6BF1F5A24E1B8BD0091FCFD /* Module */,
 				A671EF1824E8BEF200825B75 /* Domain */,
 				A671EF0124E8BB8600825B75 /* Core */,
 				A671EEE424E8B89000825B75 /* Networking */,
 				A6BF1F8424E2C42B0091FCFD /* Resources */,
 				A6BF1F7F24E1BBDF0091FCFD /* Managers */,
-				A6BF1F5A24E1B8BD0091FCFD /* Module */,
 			);
 			path = NearByApp;
 			sourceTree = "<group>";
@@ -285,6 +308,7 @@
 		A6BF1F7324E1B8F00091FCFD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A6D8DE6B24F1D8C0009198DB /* Cell */,
 				A6BF1F7424E1B8F00091FCFD /* NearByPlacesViewController.swift */,
 				A6BF1F7D24E1B90C0091FCFD /* NearByPlacesViewController.xib */,
 			);
@@ -346,6 +370,15 @@
 				A6D8DE5F24F0811E009198DB /* SearchRequestData.swift */,
 			);
 			path = "Request Data";
+			sourceTree = "<group>";
+		};
+		A6D8DE6B24F1D8C0009198DB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A6D8DE6C24F1D8E1009198DB /* VenueCell.swift */,
+				A6D8DE6D24F1D8E1009198DB /* VenueCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		AC4F3C6DF7E58D20A62BB649 /* Frameworks */ = {
@@ -417,6 +450,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6BF1F5024E1B65E0091FCFD /* LaunchScreen.storyboard in Resources */,
+				A6D8DE6F24F1D8E1009198DB /* VenueCell.xib in Resources */,
 				A6BF1F4D24E1B65E0091FCFD /* Assets.xcassets in Resources */,
 				A6BF1F4B24E1B65C0091FCFD /* Main.storyboard in Resources */,
 				A6BF1F7E24E1B90C0091FCFD /* NearByPlacesViewController.xib in Resources */,
@@ -496,6 +530,7 @@
 				A671EEF824E8B8AE00825B75 /* HttpMethod.swift in Sources */,
 				A6D8DE6824F08541009198DB /* VenueNetworkService.swift in Sources */,
 				A6BF1F7A24E1B8F00091FCFD /* NearByPlacesSceneWorkers.swift in Sources */,
+				A6D8DE6E24F1D8E1009198DB /* VenueCell.swift in Sources */,
 				A6BF1F4424E1B65C0091FCFD /* AppDelegate.swift in Sources */,
 				A671EF0024E8BA6C00825B75 /* Results.swift in Sources */,
 				A671EF1C24E8C08F00825B75 /* VenuesUseCases.swift in Sources */,
@@ -506,6 +541,7 @@
 				A6D8DE6A24F0899A009198DB /* AppLibManager.swift in Sources */,
 				A671EF0724E8BB9C00825B75 /* Constants.swift in Sources */,
 				A6D8DE6624F084B3009198DB /* UserLess.swift in Sources */,
+				A62A4D1C24F1DB53001F419D /* UITableview+Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

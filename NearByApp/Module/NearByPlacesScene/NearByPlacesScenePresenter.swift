@@ -6,15 +6,20 @@
 //  Copyright (c) 2020 AppLineup. All rights reserved.
 //
 
-protocol NearByPlacesScenePresentationLogic: class {
+protocol NearByPlacesSceneViewStore: class {
+    var venues: [NearByPlacesScene.Search.VenueViewModel] { get set }
+}
 
+protocol NearByPlacesScenePresentationLogic: class {
     func present(venues: [Venue])
 }
 
-class NearByPlacesScenePresenter: NearByPlacesScenePresentationLogic {
+class NearByPlacesScenePresenter: NearByPlacesScenePresentationLogic, NearByPlacesSceneViewStore {
 
     // MARK: Stored Properties
     weak var displayView: NearByPlacesSceneDisplayView?
+
+    var venues: [NearByPlacesScene.Search.VenueViewModel] = []
 
     // MARK: Initializers
     required init(displayView: NearByPlacesSceneDisplayView) {
@@ -29,7 +34,7 @@ extension NearByPlacesScenePresenter {
         var venuesViewModel = [NearByPlacesScene.Search.VenueViewModel]()
         venues.forEach {
             let venueViewModel = NearByPlacesScene.Search.VenueViewModel(name: $0.name,
-                                                                         search: $0.location.formattedAddress.first ?? "")
+                                                                         address: $0.location.formattedAddress.first ?? "")
             venuesViewModel.append(venueViewModel)
         }
 

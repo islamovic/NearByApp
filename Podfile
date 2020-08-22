@@ -8,5 +8,6 @@ target 'NearByApp' do
   # Pods for NearByApp
 
   pod 'Alamofire', '~> 5.2'
+  pod 'NVActivityIndicatorView'
 
 end

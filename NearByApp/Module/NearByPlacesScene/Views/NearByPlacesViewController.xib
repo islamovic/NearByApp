@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NearByPlacesViewController" customModule="NearByApp" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="wws-Sa-UzW" id="8Iv-QR-cIY"/>
                 <outlet property="view" destination="iN0-l3-epB" id="kQP-cf-7wS"/>
             </connections>
         </placeholder>
@@ -29,11 +30,19 @@
                         </navigationItem>
                     </items>
                 </navigationBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wws-Sa-UzW">
+                    <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
+                <constraint firstItem="wws-Sa-UzW" firstAttribute="top" secondItem="N7a-5t-OCz" secondAttribute="bottom" id="AQY-XU-Knn"/>
+                <constraint firstItem="wws-Sa-UzW" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="XJl-kM-OpJ"/>
                 <constraint firstItem="N7a-5t-OCz" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="fzF-ue-XDq"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="wws-Sa-UzW" secondAttribute="bottom" id="g4q-9v-BHN"/>
                 <constraint firstAttribute="trailing" secondItem="N7a-5t-OCz" secondAttribute="trailing" id="soc-XA-kKq"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="wws-Sa-UzW" secondAttribute="trailing" id="toh-9T-eKu"/>
                 <constraint firstItem="N7a-5t-OCz" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="wzX-Q6-7Be"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
